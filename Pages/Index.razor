@@ -5,7 +5,6 @@
 @inject OrderState OrderState
 
 <div class="main">
-    <h1>Blazing Pizzas</h1>
     <ul class="pizza-cards">
         @if (specials != null)
         {
@@ -17,7 +16,7 @@
                     <div class="pizza-info">
                         <span class="title">@special.Name</span>
                             @special.Description
-                          <span class="price">@special.GetFormattedBasePrice()</span>
+                          <span class="price">$@special.GetFormattedBasePrice()</span>
                     </div>
                 </li>
             }
